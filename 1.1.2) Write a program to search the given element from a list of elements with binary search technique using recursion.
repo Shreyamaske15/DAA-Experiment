@@ -1,5 +1,6 @@
 #include <stdio.h>
-void main() {
+void main() 
+{
 	int a[20], n, key, flag;
 	printf("Enter value of n : ");
 	scanf("%d", &n);
@@ -10,12 +11,17 @@ void main() {
 	printf("Enter key element : ");
 	scanf("%d", &key);
 	flag = binarySearch(a, 0, n - 1, key);
-	if (flag == -1) {
+	if (flag == -1) 
+	{
 		printf("The given key element %d is not found\n", key);
-	} else {
+	} 
+	else 
+	{
 		printf("The given key element %d is found at position : %d\n", key, flag);
 	}
 }
+
+
 void read1(int arr[],int n)
 {
 	printf("Enter %d elements : ",n);
@@ -24,6 +30,8 @@ void read1(int arr[],int n)
 		scanf("%d",&arr[i]);
 	}
 }
+
+
 void display(int arr[],int n)
 {
 	int i;
@@ -33,6 +41,7 @@ void display(int arr[],int n)
 	}
 	printf("\n");
 }
+
 
 int bubbleSort(int arr[],int n)
 {
@@ -50,6 +59,8 @@ int bubbleSort(int arr[],int n)
 		}
 	}
 }
+
+
 int binarySearch(int arr[],int low,int high,int key)
 {
 	if(low>high)
